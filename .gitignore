@@ -5,6 +5,8 @@ __pycache__/
 
 # C extensions
 *.so
+# ignore aoc dataset
+dataset
 
 # Distribution / packaging
 .Python
