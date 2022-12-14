@@ -1,7 +1,3 @@
-from audioop import reverse
-from inspect import stack
-
-
 with open("dataset", "r") as fp:
     data = fp.readlines()
 
@@ -40,11 +36,7 @@ def parse_motion(data, ignore_lines):
         tuple(
             map(
                 int,
-                d.replace("move ", "")
-                .replace("from ", "")
-                .replace("to ", "")
-                .strip()
-                .split(" "),
+                d.replace("move ", "").replace("from ", "").replace("to ", "").strip().split(" "),
             )
         )
         for d in data[ignore_lines + 1 :]
