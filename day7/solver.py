@@ -91,7 +91,10 @@ def part1(root_node):
         else:
             return node.total_size
 
-    print(find_file_under_limit(root_node))
+    return find_file_under_limit(root_node)
 
 
-part1(root_node)
+expected = 1428881
+answer = part1(root_node)
+print(answer)
+print(answer - expected)
