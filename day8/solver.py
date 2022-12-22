@@ -1,6 +1,3 @@
-from turtle import right
-
-
 with open("dataset", "r") as fp:
     data = fp.readlines()
 
